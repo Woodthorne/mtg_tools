@@ -38,7 +38,7 @@ class ManaBaseCalculator:
         remaining_sources = self.sources.copy()
         even_sources: dict[str, int] = {}
         for _ in range(self.total_sources):
-            neediest_color = max(remaining_sources, key = lambda x: remaining_sources[X])
+            neediest_color = max(remaining_sources, key = lambda x: remaining_sources[x])
             if neediest_color not in even_sources.keys():
                 even_sources[neediest_color] = 0
             even_sources[neediest_color] += 1
