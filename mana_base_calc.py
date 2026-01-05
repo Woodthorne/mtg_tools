@@ -1,3 +1,5 @@
+'''Simple calculator for figuring out mana source spread.'''
+
 class ManaBaseCalculator:
     def __init__(
         self,
