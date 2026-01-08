@@ -22,12 +22,21 @@ def convert(source_path: Path|str, save_path: Path|str) -> None:
         data = [line for line in reader]
 
     plst_loaded = False
-    fieldnames.remove('Edition')
+    fieldnames = [
+        'Count',
+        'Name',
+        'Edition Code',
+        'Card Number',
+        'Condition',
+        'Language',
+        'Foil'
+    ]
 
     with save_path.open('w', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames = fieldnames, lineterminator='\n')
         writer.writeheader()
         for entry in data:
+            entry['Count'] = entry['Tradelist Count']
             if entry['Edition'] == 'The List':
                 if not plst_loaded:
                     with PLST_SOURCE.open('r', encoding = 'utf-8') as file:
@@ -36,12 +45,12 @@ def convert(source_path: Path|str, save_path: Path|str) -> None:
                     plst_loaded = True
                 entry['Edition Code'] = 'PLST'
                 entry['Card Number'] = plst[entry['Name']]
-                entry = {key: entry[key] for key in fieldnames}
-                writer.writerow(entry)
+            entry = {key: entry[key] for key in fieldnames}
+            writer.writerow(entry)
     
 
 if __name__ == '__main__':
     folder = Path('temp')
-    source_path = folder / 'deckbox_tradelist_260105.csv'
+    source_path = folder / 'deckbox_tradelist_260108.csv'
     save_path = folder / 'converted_tradelist.csv'
     convert(source_path, save_path)
