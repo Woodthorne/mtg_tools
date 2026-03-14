@@ -1,6 +1,8 @@
 import csv
 from pathlib import Path
 
+from utils import save_deckbox_to_moxfield
+
 
 PLST_SOURCE = Path('plst_cardlist.csv')
 
@@ -18,35 +20,9 @@ def convert(source_path: Path|str, save_path: Path|str) -> None:
     
     with source_path.open('r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
-        fieldnames = list(reader.fieldnames)
         data = [line for line in reader]
 
-    plst_loaded = False
-    fieldnames = [
-        'Count',
-        'Name',
-        'Edition Code',
-        'Card Number',
-        'Condition',
-        'Language',
-        'Foil'
-    ]
-
-    with save_path.open('w', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames = fieldnames, lineterminator='\n')
-        writer.writeheader()
-        for entry in data:
-            entry['Count'] = entry['Tradelist Count']
-            if entry['Edition'] == 'The List':
-                if not plst_loaded:
-                    with PLST_SOURCE.open('r', encoding = 'utf-8') as file:
-                        reader = csv.DictReader(file)
-                        plst = {line['Name']: line['CN'] for line in reader}
-                    plst_loaded = True
-                entry['Edition Code'] = 'PLST'
-                entry['Card Number'] = plst[entry['Name']]
-            entry = {key: entry[key] for key in fieldnames}
-            writer.writerow(entry)
+    save_deckbox_to_moxfield(save_path, data)
     
 
 if __name__ == '__main__':
