@@ -1,0 +1,225 @@
+Set,CN,Name,R,La,Artist
+FNM,1,River Boa,R,EN,Steve White
+FNM,2,Terror,R,EN,Ron Spencer
+FNM,3,Longbow Archer,R,EN,Eric Peterson
+FNM,4,Volcanic Geyser,R,EN,David O'Connor
+FNM,5,Mind Warp,R,EN,Liz Danforth
+FNM,6,Shock,R,EN,Randy Gallegos
+FNM,8,Giant Growth,R,EN,Sandra Everingham
+FNM,9,Prodigal Sorcerer,R,EN,Douglas Shuler
+FNM,10,Stone Rain,R,EN,Daniel Gelon
+FNM,11,Llanowar Elves,R,EN,Anson Maddocks
+FNM,12,Staunch Defenders,R,EN,Mark Poole
+F01,6,Swords to Plowshares,R,EN,Jeff A. Menges
+F01,7,Ophidian,R,EN,Cliff Nielsen
+F01,8,Jackal Pup,R,EN,Susan Van Camp
+F01,9,Quirion Ranger,R,EN,Tom Kyffin
+F01,10,Carnophage,R,EN,Pete Venters
+F01,11,Impulse,R,EN,Bryan Talbot
+F01,12,Fireblast,R,EN,Michael Danza
+F02,1,Soltari Priest,R,EN,Janet Aulisio
+F02,2,Albino Troll,R,EN,Paolo Parente
+F02,3,Dissipate,R,EN,Richard Kane Ferguson
+F02,4,Black Knight,R,EN,Jeff A. Menges
+F02,5,Wall of Blossoms,R,EN,Heather Hudson
+F02,6,Fireslinger,R,EN,Jeff Reitz
+F02,7,Drain Life,R,EN,Douglas Shuler
+F02,8,Aura of Silence,R,EN,D. Alexander Gregory
+F02,9,Forbid,R,EN,Scott Kirschner
+F02,10,Spike Feeder,R,EN,Heather Hudson
+F02,11,Mogg Fanatic,R,EN,Brom
+F02,12,White Knight,R,EN,Daniel Gelon
+F03,1,Bottle Gnomes,R,EN,Kaja Foglio
+F03,2,Muscle Sliver,R,EN,Richard Kane Ferguson
+F03,3,Crystalline Sliver,R,EN,Allen Williams
+F03,4,Capsize,R,EN,Tom Wänerstrand
+F03,5,Priest of Titania,R,EN,Rebecca Guay
+F03,6,Goblin Bombardment,R,EN,Brian Snõddy
+F03,7,Scragnoth,R,EN,Jeff Laubenstein
+F03,8,Smother,R,EN,Carl Critchlow
+F03,9,Whipcorder,R,EN,Ron Spencer
+F03,10,Sparksmith,R,EN,Jim Nelson
+F03,11,Krosan Tusker,R,EN,Kev Walker
+F03,12,Withered Wretch,R,EN,Tim Hildebrandt
+F03,13,Disenchant,R,EN,Kevin McCann
+F04,1,Willbender,R,EN,Eric Peterson
+F04,2,Slice and Dice,R,EN,Mark Brill
+F04,3,Silver Knight,R,EN,Eric Peterson
+F04,4,Krosan Warchief,R,EN,Greg Hildebrandt
+F04,5,Lightning Rift,R,EN,Eric Peterson
+F04,6,Carrion Feeder,R,EN,Brian Snõddy
+F04,7,Treetop Village,R,EN,Anthony S. Waters
+F04,8,Accumulated Knowledge,R,EN,Randy Gallegos
+F04,9,Avalanche Riders,R,EN,"Edward P. Beard, Jr."
+F04,10,Reanimate,R,EN,Robert Bliss
+F04,11,Mother of Runes,R,EN,Scott M. Fischer
+F04,12,Brainstorm,R,EN,DiTerlizzi
+F05,1,Rancor,R,EN,Kev Walker
+F05,2,Seal of Cleansing,R,EN,Christopher Moeller
+F05,3,Flametongue Kavu,R,EN,Pete Venters
+F05,4,Blastoderm,R,EN,Eric Peterson
+F05,5,Cabal Therapy,R,EN,Ron Spencer
+F05,6,Fact or Fiction,R,EN,Terese Nielsen
+F05,7,Juggernaut,R,EN,Dan Frazier
+F05,8,Circle of Protection: Red,R,EN,Mark Tedin
+F05,9,Kird Ape,R,EN,"Ken Meyer, Jr."
+F05,10,Duress,R,EN,Lawrence Snelly
+F05,11,Counterspell,R,EN,Mark Poole
+F05,12,Icy Manipulator,R,EN,Douglas Shuler
+F06,1,Elves of Deep Shadow,R,EN,Jesper Myrfors
+F06,2,Armadillo Cloak,R,EN,Paolo Parente
+F06,3,Terminate,R,EN,DiTerlizzi
+F06,4,Lobotomy,R,EN,Thomas M. Baxa
+F06,6,Wild Mongrel,R,EN,Anthony S. Waters
+F06,7,Chainer's Edict,R,EN,Ben Thompson
+F06,8,Circular Logic,R,EN,Anthony S. Waters
+F06,9,Astral Slide,R,EN,Ron Spears
+F06,10,Arrogant Wurm,R,EN,John Avon
+F06,11a,Life // Death,R,EN,"Anthony S. Waters & Edward P. Beard, Jr."
+F06,12a,Fire // Ice,R,EN,David Martin & Franz Vohwinkel
+F07,1,Firebolt,R,EN,Ron Spencer
+F07,2,Deep Analysis,R,EN,Daren Bader
+F07,3,Gerrard's Verdict,R,EN,Carl Critchlow
+F07,4,Basking Rootwalla,R,EN,Heather Hudson
+F07,5,Wonder,R,EN,Rebecca Guay
+F07,6,Goblin Legionnaire,R,EN,Mark Romanoski
+F07,7,Engineered Plague,R,EN,Michael Sutfin
+F07,8,Goblin Ringleader,R,EN,Mark Romanoski
+F07,9,Wing Shards,R,EN,Daren Bader
+F07,10,Cabal Coffers,R,EN,Don Hazeltine
+F07,11,Roar of the Wurm,R,EN,Kev Walker
+F07,12,Force Spike,R,EN,Bryon Wackwitz
+F08,1,Remand,R,EN,Hideaki Takamura
+F08,2,Tormod's Crypt,R,EN,Lars Grant-West
+F08,3,Eternal Witness,R,EN,Terese Nielsen
+F08,4,Tendrils of Agony,R,EN,Volkan Baǵa
+F08,5,Pendelhaven,R,EN,Philip Straub
+F08,6,Resurrection,R,EN,Michael Komarck
+F08,7,Wall of Roots,R,EN,Matt Stewart
+F08,8,Desert,R,EN,Glen Angus
+F08,9,Thirst for Knowledge,R,EN,Bud Cook
+F08,10,Serrated Arrows,R,EN,John Avon
+F08,11,Isochron Scepter,R,EN,Brian Despain
+F08,12,Shrapnel Blast,R,EN,Hideaki Takamura
+F09,1,Magma Jet,R,EN,Darrell Riche
+F09,2,Myr Enforcer,R,EN,Jim Murray
+F09,3,Kitchen Finks,R,EN,Larry MacDougall
+F09,4,Merrow Reejerey,R,EN,Thomas M. Baxa
+F09,5,Wren's Run Vanquisher,R,EN,Jesper Ejsing
+F09,6,Mulldrifter,R,EN,Wayne England
+F09,7,Murderous Redcap,R,EN,Mark Hyzer
+F09,8,Lightning Greaves,R,EN,Michael Komarck
+F09,9,Watchwolf,R,EN,Dave Kendall
+F09,10,Browbeat,R,EN,Kieran Yanner
+F09,11,Oblivion Ring,R,EN,Chuck Lukacs
+F09,12,Sakura-Tribe Elder,R,EN,Ted Galaday
+F10,1,Tidehollow Sculler,R,EN,Carl Critchlow
+F10,2,Ghostly Prison,R,EN,Wayne England
+F10,3,Ancient Ziggurat,R,EN,Randy Gallegos
+F10,4,Bloodbraid Elf,R,EN,Steve Argyle
+F10,5,Cloudpost,R,EN,Jim Nelson
+F10,6,Elvish Visionary,R,EN,Lucio Parrillo
+F10,7,Anathemancer,R,EN,Mark Hyzer
+F10,8,Krosan Grip,R,EN,Franz Vohwinkel
+F10,9,Qasali Pridemage,R,EN,Dave Allsop
+F10,10,Rift Bolt,R,EN,Daniel Ljunggren
+F10,11,Gatekeeper of Malakir,R,EN,Jason Felix
+F10,12,Wild Nacatl,R,EN,Kev Walker
+F11,1,Everflowing Chalice,R,EN,Charles Urbach
+F11,2,Spellstutter Sprite,R,EN,Christopher Moeller
+F11,3,Wall of Omens,R,EN,Howard Lyon
+F11,4,Artisan of Kozilek,R,EN,Nils Hamm
+F11,5,Squadron Hawk,R,EN,Martina Pilcerova
+F11,6,Rhox War Monk,R,EN,Allen Williams
+F11,7,Jace's Ingenuity,R,EN,Steve Argyle
+F11,8,Cultivate,R,EN,John Avon
+F11,9,Teetering Peaks,R,EN,Kekai Kotaki
+F11,10,Contagion Clasp,R,EN,Franz Vohwinkel
+F11,11,Go for the Throat,R,EN,David Rapoza
+F11,12,Savage Lands,R,EN,John Avon
+F12,1,Glistener Elf,R,EN,Mark Zug
+F12,2,Despise,R,EN,Raymond Swanland
+F12,3,Tectonic Edge,R,EN,Eytan Zana
+F12,4,Dismember,R,EN,Jason Felix
+F12,5,Ancient Grudge,R,EN,Wayne England
+F12,6,Acidic Slime,R,EN,Brad Rigney
+F12,7,Forbidden Alchemy,R,EN,Randy Gallegos
+F12,8,Avacyn's Pilgrim,R,EN,Greg Staples
+F12,9,Lingering Souls,R,EN,John Stanko
+F12,10,Evolving Wilds,R,EN,Sam Burley
+F12,11,Pillar of Flame,R,EN,Dave Kendall
+F12,12,Gitaxian Probe,R,EN,Trevor Claxton
+F13,1,Searing Spear,R,EN,Christopher Moeller
+F13,2,Reliquary Tower,R,EN,Drew Baker
+F13,3,Farseek,R,EN,Michael Komarck
+F13,4,Call of the Conclave,R,EN,Anthony Palumbo
+F13,5,Judge's Familiar,R,EN,Ryan Yee
+F13,6,Izzet Charm,R,EN,Zoltan Boros
+F13,7,Rakdos Cackler,R,EN,Dave Kendall
+F13,8,Dimir Charm,R,EN,Zoltan Boros
+F13,9,Experiment One,R,EN,Jack Wang
+F13,10,Ghor-Clan Rampager,R,EN,Dave Kendall
+F13,11,Grisly Salvage,R,EN,Maciej Kuciara
+F13,12,Sin Collector,R,EN,Izzy
+F14,1,Warleader's Helix,R,EN,Wesley Burt
+F14,2,Elvish Mystic,R,EN,Winona Nelson
+F14,3,Banisher Priest,R,EN,James Zapata
+F14,4,Encroaching Wastes,R,EN,Richard Wright
+F14,5,Tormented Hero,R,EN,Wesley Burt
+F14,6,Dissolve,R,EN,Jeff Simpson
+F14,7,Magma Spray,R,EN,Mathias Kollros
+F14,8,Bile Blight,R,EN,Nils Hamm
+F14,9,Banishing Light,R,EN,Wesley Burt
+F14,10,Fanatic of Xenagos,R,EN,Zoltan Boros
+F14,11,Brain Maggot,R,EN,Dave Kendall
+F14,12,Stoke the Flames,R,EN,Mathias Kollros
+F15,2,Disdainful Stroke,R,EN,Svetlin Velinov
+F15,3,Hordeling Outburst,R,EN,Zoltan Boros
+F15,4,Suspension Field,R,EN,Seb McKinnon
+F15,5,Abzan Beastmaster,R,EN,Scott Murphy
+F15,6,Frost Walker,R,EN,Peter Mohrbacher
+F15,7,Path to Exile,R,EN,Raf Sarmento
+F15,8,Serum Visions,R,EN,Dan Murayama Scott
+F15,9,Orator of Ojutai,R,EN,David Gaillet
+F15,10,Ultimate Price,R,EN,Scott Murphy
+F15,11,Roast,R,EN,Zoltan Boros
+F15,12,Anticipate,R,EN,Volkan Baǵa
+F16,1,Nissa's Pilgrimage,R,EN,Christine Choi
+F16,2,Clash of Wills,R,EN,Anna Steinbauer
+F16,3,Smash to Smithereens,R,EN,Darek Zabrocki
+F16,4,Blighted Fen,R,EN,Jason Felix
+F16,5,Goblin Warchief,R,EN,Mark Zug
+F16,6,Sylvan Scrying,R,EN,Christine Choi
+F16,7,Spatial Contortion,R,EN,Joseph Meehan
+F16,8,Crumbling Vestige,R,EN,Jonas De Ro
+F16,9,Flaying Tendrils,R,EN,Svetlin Velinov
+F16,10,Rise from the Tides,R,EN,Lucas Graciano
+F16,11,Fiery Temper,R,EN,Eric Deschamps
+F16,12,Call the Bloodline,R,EN,Magali Villeneuve
+F17,1,Noose Constrictor,R,EN,Kev Walker
+F17,2,Fortune's Favor,R,EN,Grzegorz Rutkowski
+F17,3,Incendiary Flow,R,EN,Slawomir Maniak
+F17,4,Servo Exhibition,R,EN,Vincent Proce
+F17,5,Unlicensed Disintegration,R,EN,Florian de Gesincourt
+F17,6,Aether Hub,R,EN,Jonas De Ro
+F17,7,Reverse Engineer,R,EN,Jason Kang
+F17,8,Fatal Push,R,EN,Alex Konstad
+F17,9,Renegade Rallier,R,EN,David Palumbo
+PDOM,60,Opt,C,EN,Tyler Jacobson
+PDOM,81,Cast Down,U,EN,Bastien L. Deharme
+PDOM,204,"Shanna, Sisay's Legacy",U,EN,Magali Villeneuve
+PM19,29,Militia Bugler,U,EN,David Gaillet
+PM19,110,Murder,U,EN,Tyler Jacobson
+PM19,180,Elvish Rejuvenator,C,EN,Winona Nelson
+PGRN,6,Conclave Tribunal,U,EN,Seb McKinnon
+PGRN,54,Sinister Sabotage,U,EN,Mathias Kollros
+PGRN,206,Thought Erasure,U,EN,Anna Steinbauer
+PRNA,107,Light Up the Stage,U,EN,Dmitry Burmak
+PRNA,178,Growth Spiral,C,EN,Seb McKinnon
+PRNA,192,Mortify,U,EN,Anthony Palumbo
+PWAR,41,Augur of Bolas,U,EN,Alex Konstad
+PWAR,171,Paradise Druid,U,EN,Nils Hamm
+PWAR,193,Dovin's Veto,U,EN,Izzy
+PMDA,4,Earthquake,R,JA,Sansyu
+PMDA,3,Serra Angel,R,JA,Mikio Masuda
+PMDA,2,Pouncing Jaguar,R,JA,Nablange
