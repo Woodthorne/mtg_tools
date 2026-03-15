@@ -1,22 +1,15 @@
 import csv
 from pathlib import Path
 
-from utils import save_deckbox_to_moxfield
+from utils import save_deckbox_to_moxfield, verify_path
 
 
 PLST_SOURCE = Path('plst_cardlist.csv')
 
 
 def convert(source_path: Path|str, save_path: Path|str) -> None:
-    if isinstance(source_path, str):
-        source_path = Path(source_path)
-    if not source_path.exists():
-        raise FileNotFoundError(source_path)
-    
-    if isinstance(save_path, str):
-        save_path = Path(save_path)
-    if save_path.exists():
-        raise FileExistsError(save_path)
+    source_path = verify_path(source_path, verify_exists = True)
+    save_path = verify_path(save_path, verify_available = True)
     
     with source_path.open('r', encoding='utf-8') as file:
         reader = csv.DictReader(file)

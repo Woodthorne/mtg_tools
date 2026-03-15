@@ -48,3 +48,13 @@ def save_deckbox_to_moxfield(save_path: Path, card_dicts: list[dict[str, str]]) 
                 entry['Card Number'] = cardnumber
             entry = {key: entry[key] for key in fieldnames}
             writer.writerow(entry)
+
+
+def verify_path(path: Path|str, verify_exists: bool = False, verify_available: bool = False) -> Path:
+    if isinstance(path, str):
+        path = Path(path)
+    if verify_exists and not path.exists():
+        raise FileNotFoundError(path)
+    if verify_available and path.exists():
+        raise FileExistsError(path)
+    return path

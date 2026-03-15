@@ -1,25 +1,14 @@
 import csv
 from pathlib import Path
 
-from utils import save_deckbox_to_moxfield
+from utils import save_deckbox_to_moxfield, verify_path
 
 PLST_SOURCE = Path('plst_cardlist.csv')
 
 def match_trade(wishlist_path: Path|str, tradelist_path: Path|str, save_path: Path|str) -> None:
-    if isinstance(wishlist_path, str):
-        wishlist_path = Path(wishlist_path)
-    if not wishlist_path.exists():
-        raise FileNotFoundError(wishlist_path)
-    
-    if isinstance(tradelist_path, str):
-        tradelist_path = Path(tradelist_path)
-    if not tradelist_path.exists():
-        raise FileNotFoundError(tradelist_path)
-    
-    if isinstance(save_path, str):
-        save_path = Path(save_path)
-    if save_path.exists():
-        raise FileExistsError(save_path)
+    wishlist_path = verify_path(wishlist_path, verify_exists = True)
+    tradelist_path = verify_path(tradelist_path, verify_exists = True)
+    save_path = verify_path(save_path, verify_available = True)
     
     wishlist: list[dict[str, int|str]] = []
     with wishlist_path.open('r', encoding='utf-8') as file:
