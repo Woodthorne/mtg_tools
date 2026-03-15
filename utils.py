@@ -2,8 +2,8 @@ import csv
 from pathlib import Path
 
 
-PLST_SOURCE = Path('plst_cardlist.csv')
-FNM_SOURCE = Path('fnm_cardlist.csv')
+PLST_SOURCE = Path('assets/plst_cardlist.csv')
+FNM_SOURCE = Path('assets/fnm_cardlist.csv')
 
 
 def get_plst_set_info(cardname: str, cardnumber: str) -> tuple[str, str]:
