@@ -3,7 +3,6 @@ from pathlib import Path
 
 from utils import save_deckbox_to_moxfield, verify_path
 
-PLST_SOURCE = Path('plst_cardlist.csv')
 
 def match_trade(wishlist_path: Path|str, tradelist_path: Path|str, save_path: Path|str) -> None:
     wishlist_path = verify_path(wishlist_path, verify_exists = True)
