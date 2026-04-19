@@ -1,8 +1,8 @@
 import csv
+from collections import defaultdict
 from pathlib import Path
 
-from utils import save_deckbox_to_moxfield, verify_path
-
+from utils import read_deckbox, save_deckbox_to_moxfield, verify_path
 
 def card_name_exists(path: Path, card_name: str):
     with path.open('r', encoding='utf-8') as file:
@@ -13,28 +13,22 @@ def card_name_exists(path: Path, card_name: str):
         return False
 
 
-def find_missing(source_path: Path|str, tradelist_path: Path|str, save_path: Path|str) -> None:
+def find_difference(source_path: Path|str, tradelist_path: Path|str, save_path: Path|str, match_printing: bool = False) -> None:
     source_path = verify_path(source_path, verify_exists = True)
     tradelist_path = verify_path(tradelist_path, verify_exists = True)
-    save_path = verify_path(save_path, verify_available = True)
-
-    with source_path.open('r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        existing_cards = [card['Name'] for card in reader]
+    save_path = verify_path(save_path, verify_available = False)
     
-    availables: list[dict[str, int|str]] = []
-    with tradelist_path.open('r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        for card in reader:
-            if card['Name'] not in existing_cards:
-                availables.append(card)
+    existing_gen = read_deckbox(source_path)
+    existing_cards = defaultdict(list)
+    for card in iter(existing_gen):
+        existing_cards[card['Name']].append((card['Edition Code'], card['Card Number']))
+    
+    availables = []
+    tradelist_gen = read_deckbox(tradelist_path)
+    for trade in iter(tradelist_gen):
+        if match_printing and (trade['Edition Code'], trade['Card Number']) not in existing_cards[trade['Name']]:
+            availables.append(trade)
+        elif not match_printing and trade['Name'] not in existing_cards.keys():
+            availables.append(trade)
     
     save_deckbox_to_moxfield(save_path, availables)
-
-
-if __name__ == '__main__':
-    folder = Path('temp')
-    source_path = folder / 'deckbox_inventory_a_260323.csv'
-    tradelist_path = folder / 'deckbox_tradelist_260314.csv'
-    save_path = folder / 'possible_interests.csv'
-    find_missing(source_path, tradelist_path, save_path)
