@@ -1,5 +1,6 @@
 import csv
 from pathlib import Path
+from typing import Generator, Any
 
 
 PLST_SOURCE = Path('assets/plst_cardlist.csv')
@@ -20,7 +21,56 @@ def get_fnm_set_info(cardname: str) -> tuple[str, str]:
         for line in reader:
             if line['Name'] == cardname:
                 return line['Set'], line['CN']
+
+
+def read_deckbox(
+        csv_path: Path,
+        card_name: str = None,
+        card_edition_code: str = None,
+        card_number: str = None
+) -> Generator[dict[str, str], Any, None]:
+    with csv_path.open('r', encoding = 'utf-8') as file:
+        reader = csv.DictReader(file)
+        for card in reader:            
+            if not card_name:
+                yield card
+            elif not card_edition_code and card['Name'] == card_name:
+                yield card
+            elif card['Name'].lower() == card_name.lower() \
+                and card['Edition Code'].lower() == card_edition_code.lower() \
+                and card['Card Number'].lower() == card_number.lower():
+                    yield card
+
+
+def read_wishlist(txt_path: Path) -> Generator[dict[str, str], Any, None]:
+    with txt_path.open('r', encoding = 'utf-8') as file:
+        for row in file.readlines():
+            stripped_row = row.strip('\n')
+            split_row = stripped_row.split()
+
+            match split_row[-1]:
+                case '*F*':
+                    foil = 'foil'
+                    printing_note = ''
+                    split_row.pop(-1)
+                case '*E*':
+                    foil = 'foil'
+                    printing_note = 'Foil Etched'
+                    split_row.pop(-1)
+                case _:
+                    foil = ''
+                    printing_note = ''
             
+            card = {
+                'Count': split_row[0],
+                'Name': ' '.join(split_row[1:-2]),
+                'Edition Code': split_row[-2].strip('()'),
+                'Card Number': split_row[-1],
+                'Foil': foil,
+                'Printing Note': printing_note
+            }
+            yield card
+
 
 def save_deckbox_to_moxfield(save_path: Path, card_dicts: list[dict[str, str]]) -> None:
     fieldnames = [
